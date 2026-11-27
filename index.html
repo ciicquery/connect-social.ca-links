@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0f13">
+  <meta name="description" content="Find Connect International Immigration and Jaspreet Kaur on social media, visit our website or contact our Mississauga office.">
+  <title>Connect International Immigration | Social Links</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #fff4df;
+      --muted: #cec1ad;
+      --bronze: #e3bf77;
+      --gold: #cba350;
+      --line: #665033;
+      --surface: #171719;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #0c0f13;
+      color: var(--ink);
+      font: 400 1rem/1.6 Poppins, system-ui, sans-serif;
+    }
+    .background {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      background: radial-gradient(ellipse at 50% 0, #2a2116, #0c0f13 68%);
+    }
+    .light-trail {
+      position: absolute;
+      display: block;
+      width: clamp(45rem, 105vw, 108rem);
+      aspect-ratio: 1.85;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      border-bottom-color: #e6b968b8;
+      box-shadow: 0 10px 20px -16px #ffc377;
+      transform: rotate(var(--tilt, -25deg));
+      animation: light-drift var(--duration, 16s) ease-in-out infinite;
+    }
+    .light-trail::after {
+      content: "";
+      position: absolute;
+      inset: .9rem -1.6rem;
+      border-radius: inherit;
+      border-bottom: 1px solid #cba35055;
+      box-shadow: 0 30px 70px -32px #c98d3a88;
+    }
+    .light-trail:first-child { top: -25%; left: -22%; }
+    .light-trail:last-child {
+      right: -35%;
+      bottom: -11%;
+      --tilt: 145deg;
+      --duration: 21s;
+      animation-delay: -7s;
+    }
+    @keyframes light-drift {
+      0%, 100% { transform: translate3d(-4%, 0, 0) rotate(var(--tilt, -25deg)); opacity: .56; }
+      50% { transform: translate3d(8%, 16%, 0) rotate(calc(var(--tilt, -25deg) + 16deg)); opacity: 1; }
+    }
+    .wrap {
+      position: relative;
+      width: min(100% - 2rem, 36rem);
+      margin-inline: auto;
+      padding-block: clamp(2.25rem, 7vw, 4rem) 2rem;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      justify-items: center;
+      text-align: center;
+      margin-bottom: 1.65rem;
+      animation: arrive .55s ease-out both;
+    }
+    .logo { display: block; width: clamp(10.5rem, 38vw, 14rem); height: auto; }
+    h1 {
+      margin: 1.25rem 0 .4rem;
+      font: 400 clamp(2.25rem, 7.8vw, 3.65rem)/1.05 Georgia, serif;
+      letter-spacing: -.05em;
+    }
+    h1 span { color: var(--bronze); }
+    .hero p { margin: 0; max-width: 35ch; color: var(--muted); font-size: .9rem; }
+    .hero .tagline {
+      margin-top: .65rem;
+      color: var(--bronze);
+      font: italic 1.15rem/1.35 Georgia, serif;
+    }
+    @media (min-width: 48rem) {
+      .hero .intro-copy { max-width: none; white-space: nowrap; }
+    }
+    .hero .credentials {
+      margin-top: .75rem;
+      max-width: 100%;
+      color: var(--bronze);
+      font-size: .8rem;
+      font-weight: 600;
+      text-wrap: balance;
+    }
+
+    .website, .social-link {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      align-items: center;
+      gap: .8rem;
+      padding: .75rem .9rem;
+      color: inherit;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      border-radius: .85rem;
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+    .website {
+      background: linear-gradient(105deg, #f1d59d, #fff0cb 56%, #efd8a5);
+      border-color: #cba350;
+      color: #211b13;
+    }
+    .website .icon-tile { background: #fff8e7; color: #825c26; }
+    .website .detail { color: #524027; }
+    .website .outbound { color: #6a4c1f; }
+    .directory { margin-top: 1.35rem; }
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      margin: 0 0 .65rem;
+      color: var(--bronze);
+      font-size: clamp(1.1rem, 4vw, 1.35rem);
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .section-title::before, .section-title::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #745633);
+    }
+    .section-title::after { transform: scaleX(-1); }
+    .social-grid { display: grid; gap: .6rem; margin: 0; padding: 0; list-style: none; }
+    .social-link { background: var(--surface); box-shadow: 0 .25rem .8rem #0004; }
+    .icon-tile {
+      display: grid;
+      place-items: center;
+      width: 2.6rem;
+      height: 2.6rem;
+      border-radius: .65rem;
+    }
+    .whatsapp { background: #25d366; color: #10291b; }
+    .instagram { background: radial-gradient(circle at 27% 100%, #ffdc80, #f77737 30%, #e1306c 52%, #833ab4 78%, #405de6); color: white; }
+    .facebook { background: #0866ff; color: white; }
+    .tiktok { background: #010101; color: #fff; }
+    .tiktok .icon { filter: drop-shadow(-1px -1px #25f4ee) drop-shadow(1px 1px #fe2c55); }
+    .youtube { background: #ff0033; color: white; }
+    .icon { width: 1.35rem; height: 1.35rem; fill: currentColor; }
+    .outbound { width: 1rem; height: 1rem; color: var(--bronze); }
+    .label, .detail { display: block; overflow-wrap: anywhere; }
+    .label { font-weight: 600; line-height: 1.4; }
+    .detail { color: var(--muted); font-size: .8rem; margin-top: .15rem; }
+    @keyframes arrive {
+      from { opacity: 0; transform: translateY(.5rem); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (hover: hover) {
+      .website:hover, .social-link:hover { transform: translateY(-2px); }
+      .website:hover, .social-link:hover { border-color: var(--gold); box-shadow: 0 .35rem 1rem #0008; }
+    }
+    a:focus-visible { outline: 2px solid var(--bronze); outline-offset: 3px; }
+    footer {
+      margin-top: 1.65rem;
+      padding: clamp(1rem, 5vw, 1.5rem);
+      border: 1px solid #cba35075;
+      border-radius: 1rem;
+      background: #171511;
+      color: #fff2cb;
+    }
+    footer h2 { margin: 0; font: 400 1.6rem/1.2 Georgia, serif; }
+    .contact { display: grid; gap: .1rem; margin: .75rem 0 0; font-size: .875rem; }
+    .contact div { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); align-items: baseline; }
+    .contact dt { color: #e1bc76; font-weight: 600; }
+    .contact dd { margin: 0; min-width: 0; }
+    .contact a { display: block; padding-block: .42rem; color: inherit; overflow-wrap: anywhere; text-underline-offset: .16em; }
+    footer a:focus-visible { outline-color: #e1bc76; }
+    @media (prefers-reduced-motion: reduce) {
+      .hero, .light-trail { animation: none; }
+      .website, .social-link { transition: none; transform: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M6 18 18 6M8 6h10v10" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-web" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.55"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></g>
+    </symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round" d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/>
+      <path d="M8.3 7.1c-.6 0-1.5.7-1.5 2.1 0 1.3 1.1 3.3 2.7 4.9 1.7 1.6 3.8 2.7 5.1 2.7 1.4 0 2.2-.9 2.2-1.5v-.7l-2.7-1.3c-.2-.1-.4 0-.5.2l-.9 1a8.4 8.4 0 0 1-3.7-3.7l1-.9c.2-.2.2-.3.1-.5L9 7.1Z"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g>
+      <circle cx="17.5" cy="6.7" r="1.1"/>
+    </symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24">
+      <path d="M14 22v-9h3l.5-3.5H14V7.3c0-1 .3-1.7 1.8-1.7h1.9V2.4C17.3 2.3 16.2 2 14.9 2c-3 0-5 1.8-5 5.1v2.4H7V13h2.9v9Z"/>
+    </symbol>
+    <symbol id="icon-tiktok" viewBox="0 0 24 24">
+      <path d="M14.4 2h3.3c.3 2.6 2 4.1 4.3 4.3v3.3a8 8 0 0 1-4.3-1.4v7.2a6.1 6.1 0 1 1-6.1-6.1h.8v3.4a2.8 2.8 0 1 0 2 2.7Z"/>
+    </symbol>
+    <symbol id="icon-youtube" viewBox="0 0 24 24">
+      <path fill-rule="evenodd" d="M21.7 7.1a2.7 2.7 0 0 0-1.9-2C18.1 4.7 12 4.7 12 4.7s-6.1 0-7.8.4a2.7 2.7 0 0 0-1.9 2A28 28 0 0 0 2 12c0 1.6.1 3.3.3 4.9a2.7 2.7 0 0 0 1.9 2c1.7.4 7.8.4 7.8.4s6.1 0 7.8-.4a2.7 2.7 0 0 0 1.9-2 28 28 0 0 0 .3-4.9c0-1.6-.1-3.3-.3-4.9ZM10 15.2V8.8l5.5 3.2Z"/>
+    </symbol>
+  </svg>
+
+  <div class="background" aria-hidden="true">
+    <span class="light-trail"></span>
+    <span class="light-trail"></span>
+  </div>
+  <main class="wrap">
+    <header class="hero">
+      <img class="logo" src="connect-logo.png" width="880" height="338" alt="Connect International Immigration">
+      <p class="tagline">We help you Emigrate!</p>
+      <h1>Let’s stay <span>connected.</span></h1>
+      <p class="intro-copy">Follow Connect International Immigration and Jaspreet Kaur for Canadian immigration updates.</p>
+      <p class="credentials">Regulated Canadian Immigration Consultants (RCIC) | Licensed Immigration Professionals</p>
+    </header>
+
+    <a class="website" href="https://connectinternational.ca/">
+      <span class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#icon-web"/></svg></span>
+      <span><span class="label">Visit our website</span><span class="detail">Explore immigration services and consultations</span></span>
+      <svg class="outbound" aria-hidden="true"><use href="#icon-arrow"/></svg>
+    </a>
+
+    <nav class="directory" aria-labelledby="social-heading">
+      <h2 class="section-title" id="social-heading">Follow us</h2>
+      <ul class="social-grid" role="list">
+        <li>
+          <a class="social-link" href="https://whatsapp.com/channel/0029VbEps5U2v1J1F1ihL40E">
+            <span class="icon-tile whatsapp"><svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg></span>
+            <span><span class="label">WhatsApp Channel</span><span class="detail">Connect Immigration updates</span></span>
+            <svg class="outbound" aria-hidden="true"><use href="#icon-arrow"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-link" href="https://www.instagram.com/connectimmigration">
+            <span class="icon-tile instagram"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"/></svg></span>
+            <span><span class="label">Instagram · Connect Immigration</span><span class="detail">@connectimmigration</span></span>
+            <svg class="outbound" aria-hidden="true"><use href="#icon-arrow"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-link" href="https://www.instagram.com/jaspreet_kaur_rcic?fqnt=d3g0OTRxZ2xvb2Mx">
+            <span class="icon-tile instagram"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"/></svg></span>
+            <span><span class="label">Instagram · Jaspreet Kaur</span><span class="detail">@jaspreet_kaur_rcic</span></span>
+            <svg class="outbound" aria-hidden="true"><use href="#icon-arrow"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-link" href="https://www.facebook.com/CIICimmigration?rdid=FqyVOYCCX6EPQ2Hw&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1F5uaRccoW%2F">
+            <span class="icon-tile facebook"><svg class="icon" aria-hidden="true"><use href="#icon-facebook"/></svg></span>
+            <span><span class="label">Facebook</span><span class="detail">@CIICimmigration</span></span>
+            <svg class="outbound" aria-hidden="true"><use href="#icon-arrow"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-link" href="https://www.tiktok.com/@jaspreet_rcic_irb">
+            <span class="icon-tile tiktok"><svg class="icon" aria-hidden="true"><use href="#icon-tiktok"/></svg></span>
+            <span><span class="label">TikTok</span><span class="detail">@jaspreet_rcic_irb</span></span>
+            <svg class="outbound" aria-hidden="true"><use href="#icon-arrow"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-link" href="https://www.youtube.com/channel/UCmJ5ECJZ2dz2QFSbcR9e-Dg">
+            <span class="icon-tile youtube"><svg class="icon" aria-hidden="true"><use href="#icon-youtube"/></svg></span>
+            <span><span class="label">YouTube</span><span class="detail">Connect Immigration videos</span></span>
+            <svg class="outbound" aria-hidden="true"><use href="#icon-arrow"/></svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <footer aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact our office</h2>
+      <dl class="contact">
+        <div><dt>Phone</dt><dd><a href="tel:+19059497996">+1 905-949-7996</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:info@connectinternational.ca">info@connectinternational.ca</a></dd></div>
+        <div><dt>Address</dt><dd><a href="https://maps.app.goo.gl/P9LgSNqTL84iK1mW6">Unit 1 &amp; 2, 1087 Meyerside Drive<br>Mississauga, ON L5T 1M5</a></dd></div>
+      </dl>
+    </footer>
+  </main>
+</body>
+</html>
